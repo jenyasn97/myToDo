@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"); /*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Tenor Sans", sans-serif;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+}
+
+.conteiner {
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .conteiner {
+    width: 80%;
+  }
+}
+@media (max-width: 890px) {
+  .conteiner {
+    width: 95%;
+  }
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.header h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.main__add-todo {
+  display: flex;
+  justify-content: space-between;
+}
+.main__text {
+  width: 100%;
+  margin-right: 5px;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid darkgoldenrod;
+}
+.main__text:focus {
+  box-shadow: 0px 0px 10px rgb(57, 214, 253);
+}
+@media (max-width: 760px) {
+  .main__text {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+}
+.main__btn-add {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(207, 2, 207);
+  color: white;
+}
+.main__btn-add:hover {
+  background-color: rgb(247, 20, 247);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 10px rgb(109, 109, 109);
+}
+@media (max-width: 760px) {
+  .main__btn-add {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+}
+.main__todo-list {
+  margin-top: 10px;
+  font-size: 24px;
+}
+.main__todo-list .done h2 {
+  color: black;
+}
+.main__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid rgb(156, 156, 156);
+}
+.main__item h2 {
+  width: 90%;
+  padding-right: 10px;
+  color: white;
+}
+@media (max-width: 760px) {
+  .main__item h2 {
+    font-size: 1.2rem;
+  }
+}
+.main__item:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.05);
+}
+
+.item__btns {
+  font-size: 0;
+  display: flex;
+}
+.item__btns button {
+  margin-right: 5px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 760px) {
+  .item__btns button {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 580px) {
+  .item__btns button {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 580px) {
+  .item__btns {
+    flex-direction: column;
+  }
+}
+.item__btn-done {
+  background-color: rgb(13, 125, 64);
+}
+.item__btn-done:hover {
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 0px 10px rgb(2, 153, 95);
+}
+.item__btn-delete {
+  background-color: rgb(250, 23, 23);
+}
+.item__btn-delete:hover {
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 0px 10px rgb(109, 109, 109);
+}
+
+.done {
+  background-color: rgb(120, 243, 176);
+}
